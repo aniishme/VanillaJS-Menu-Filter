@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.header h1 {
+  font-size: 40px;
+  font-family: Helvetica, sans-serif;
+  z-index: 15;
+}
+
+.buttons button {
+  margin: 10px 15px;
+  border: none;
+  background-color: aquamarine;
+  width: 70px;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#burger {
+  display: none;
+  cursor: pointer;
+  margin-top: -70px;
+}
+#first,
+#second,
+#third {
+  background-color: rgb(12, 11, 11);
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  transition: all 0.6s ease;
+}
+.toggle #first {
+  transform: rotate(-405deg) translate(-5px, 6px);
+}
+
+.toggle #second {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.toggle #third {
+  transform: rotate(405deg) translate(-5px, -6px);
+}
+
+.card {
+  transition: all 0.5s ease-in;
+}
+
+.cardanimation {
+  transform: translateY(20%);
+  opacity: 0;
+}
+.cardhide {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translateY(-200%);
+    /* display: none; */
+    z-index: 10;
+    background-color: rgb(224, 190, 190);
+    transition: all 0.6s ease;
+  }
+  p.card-text {
+    display: none;
+  }
+
+  .buttons-toggle {
+    /* display: flex; */
+    transform: translateY(100%);
+  }
+  #burger {
+    display: block;
+  }
+}

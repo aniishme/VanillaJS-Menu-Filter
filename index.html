@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Filter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <h1>MENU</h1>
+      <div class="buttons">
+        <button class="all">All</button>
+        <button class="pizza">Pizza</button>
+        <button class="burger">Burger</button>
+        <button class="momo">Momo</button>
+        <button class="pasta">Pasta</button>
+      </div>
+
+      <div id="burger">
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="pizza card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/pizza.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="burger card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/burger.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pasta card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/pasta.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pasta</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="momo card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/momo.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">MOMO</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="burger card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/burger.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pasta card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/pasta.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pasta</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pizza card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-sm-4 col-md-4">
+            <img src="./img/pizza.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="momo card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-4 col-md-4">
+            <img src="./img/momo.jpg" class="card-img" alt="..." />
+          </div>
+          <div class="col-8 col-sm-8 col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">MOMO</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
